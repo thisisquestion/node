@@ -1,0 +1,14 @@
+.margin{width:960px;margin:0 auto;}
+
+#header{padding:35px 0 34px;border-bottom: 1px #ccc solid;}
+#main{height:400px;width:1200px;background:url(../images/loginbg.jpg);background-size:contain;margin:0 auto;position: relative;}
+#main .box{width:280px;padding:20px;height:340px;background:#fff;position: absolute;top:10px;right:20px;}
+#main .box p{font:16px/2 "";color:#2db4ea;border-bottom: 1px solid #ccc;}
+#main .box .box1{overflow: hidden;margin-top:30px;}
+#main .box .box1 .cont{float:left;width:57px;height:38px;font:30px/38px "";background:#e4e4e4;text-align: center;border-radius: 5px 0 0 5px;}
+.error{color:red;}
+#main .box .box1 .cont span{font:30px/38px "";color:#666;}
+#main .box input{float:left;height:38px;width:220px;padding:0 10px;font:16px/38px "";box-sizing: border-box;}
+#main .box #btn{height:38px;width:100%;background:#169cd5;text-align: center;color:#fff;padding:0 10px;margin-top:50px;}
+
+#main span{color:red;font:16px/20px "微软雅黑";}

@@ -5,6 +5,15 @@
 		<title></title>
 		<link href="css/public.css" rel="stylesheet" charset="UTF-8">
 		<link href="css/login.css" rel="stylesheet" charset="UTF-8">
+		<link href="css/iconfont.css" rel="stylesheet" charset="UTF-8">
+		<script type="text/javascript" src="libs/jquery2.2.4.js"></script>
+		<script type="text/javascript" src="libs/jquery.validate.js"></script>
+		<script type="text/javascript" src="libs/jquery.validate.messages_zh.js"></script>
+		<script>
+	        $(function(){
+	            $('form').validate()
+	        })
+		</script>
 	</head>
 	<body>
 		<div id="header">
@@ -14,10 +23,25 @@
 		</div>
 		<div id="main">
 			<div class="box">
-				<input type="text" id="user">
-				<input type="text" id="pass">
-				<input type="button" id="btn">
+				<p>博库用户登录</p>
+				<form>
+					<div class="box1">
+						<div class="cont">
+							<span class="iconfont icon-suo"></span>
+						</div>
+						<input type="text" id="user" placeholder="请输入用户名" minlength="6" class="required" maxlength="12">
+					</div>
+					<div class="box1">
+						<div class="cont">
+							<span class="iconfont icon-jiesuo"></span>
+						</div>
+						<input type="password" id="pass" placeholder="请输入密码" class="required" maxlength="12" minlength="6">
+					</div>
+					<input type="button" id="btn" value="登录">
+				</form>
+				<span></span>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/login.js"></script>
 </html>

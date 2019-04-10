@@ -1,0 +1,29 @@
+.margin{width:1200px;margin:0 auto;}
+
+
+#header{height:30px;background:#f5f5f5;font:14px/30px "微软雅黑";}
+#header .header-l{float:left;}
+#header .header-l span.te{color:#ccc;}
+#header .header-l span.icon-44{color:#2db4ea;padding:0 0 0 15px;}
+#header .header-l a{color:#666;}
+#header .header-l a:hover{color:#2db4ea;}
+#header .header-r{float:right;}
+#header .header-r ul{float:right;}
+#header .header-r ul li{float:left;}
+#header .header-r ul li:nth-child(1){position:relative;}
+#header .header-r ul li:nth-child(1) .list{border:1px solid #666;width:80px;padding:5px;background:#fff;display:none;position:absolute;top:0;z-index:4;}
+#header .header-r ul li a{color:#666;}
+#header .header-r ul li span{padding:0 15px;color:#ccc;}
+#header .header-r ul li span.icon-xiajiantou{padding:0;color:#666;line-height:30px;}
+#header .header-r ul li a:hover{color:#2db4ea;}
+
+
+#logo{padding:35px 0 34px;border-bottom: 1px #ccc solid;height:30px;}
+#logo img{display:block;float:left;margin-top:2px;}
+#logo p{float:left;font-size:40px;}
+
+#main{margin-top:20px;}
+#main table{width:1200px;margin:0 auto;}
+#main table tbody img{width:60px;}
+#main table tbody tr td span{display:block;width:100px;text-align:center;color:#fff;
+			background:deepskyblue;line-height:30px;border-radius:6px;cursor:pointer;}

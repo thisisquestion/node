@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" charset="UTF-8">
+		<link href="css/shopcar.css" rel="stylesheet" charset="UTF-8">
+		<link rel="stylesheet" href="css/iconfont.css">
+	</head>
+	<body>
+		<div id="header">
+			<div class="margin">
+				<div class="header-l">
+					<a href="login.html">登录</a>
+					<span class="te">|</span>
+					<a href="register.html">免费注册</a>
+					<a href="#"><span class="iconfont icon-44"></span>下载博库APP</a>
+				</div>
+				<div class="header-r">
+					<ul>
+						<li><a href="#">我的博库<span class="iconfont icon-xiajiantou"></span></a><span>|</span>
+						<div class="list">
+							<p><a href="#">我的博库</a></p>
+							<p><a href="#">我的订单</a></p>
+							<p><a href="#">我的优惠券</a></p>
+							<p><a href="#">我的收藏</a></p>
+							<p><a href="#">我的收入</a></p>
+							<p><a href="#">官方消息</a></p>
+						</div>
+						</li>
+						<li><a href="#">收藏夹</a><span>|</span></li>
+						<li><a href="#">店铺管理</a><span>|</span></li>
+						<li><a href="#">联系客服</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="logo" class="margin">
+				<img src="https://bnmpstyle.bookuu.com/www/images/icon/logo.png">
+				<p>购物车</p>
+		</div>
+		<div id="main">
+			<table border=1 cellspacing="0">
+				<thead>
+					<tr>
+						<th></th>
+						<th>商品图片</th>
+						<th>名字</th>
+						<th>价格</th>
+						<th>数量</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--<tr>
+						<td><input type="checkbox"></td>
+						<td><img src="img/w1.jpg"></td>
+						<td>那Joan经历过几分看了看法娜拉会计分录</td>
+						<td>价格</td>
+						<td>数量</td>
+						<td><span>删除</span></td>
+					</tr>-->
+				</tbody>
+				<tfoot>
+					<tr>
+						<td><input type="checkbox" id="selectAll"></td>
+						<td>全部选中</td>
+						<td>总价</td>
+						<td id="totalPrice">0</td>
+						<td id="totalNum">总数量：0</td>
+						<td><span>清空购物车</span></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</body>
+	<script src="libs/jquery2.2.4.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="libs/jquery.cookie.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/shopcar.js" type="text/javascript" charset="UTF-8"></script>
+</html>

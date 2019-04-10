@@ -5,13 +5,20 @@ $("#header .header-r ul li").eq(0).hover(function(){
 	$("#header .header-r ul li .list").stop().slideUp();
 })
 //三级导航区域
+$("#nav .nav-b dl dt").hover(function(){
+	$(this).children("ul").stop().slideDown();
+},function(){
+	$(this).children("ul").stop().slideUp();
+})
 $("#nav .nav-b dl dt ul.list li").hover(function(){
+	$("#nav .nav-b dl dt .contbox").css({display:"block"});
 	$(this).css({background:"#fff"}).find("a").css({color:"#333"}).parent().parent().next().children().eq($(this).index()).css({display:"block"}).siblings().css({display:"none"});
 },function(){
 	$(this).css({background:"rgba(70,70,70,0.8)"}).find("a").css({color:"#fff"}).parent().parent().next().children().eq($(this).index()).css({display:"none"}).on("mouseenter",function(){
 		$(this).css({display:"block"})
 	}).on("mouseleave",function(){
-		$(this).css({display:"none"})
+		$(this).css({display:"none"});
+		$("#nav .nav-b dl dt .contbox").css({display:"none"});
 	})
 })
 
@@ -28,13 +35,7 @@ $("#banner .cont").banner({
 //倒计时模块:
 $("#main #retroclockbox1").flipcountdown();
 
-//滑过放大效果
-$(".enlarge li a img").on("mouseenter",function(){
-	$(this).css({width:210});
-})
-$(".enlarge li a img").on("mouseleave",function(){
-	$(this).css({width:190});
-})
+
 
 //楼层效果
 document.onscroll = function(){
@@ -77,3 +78,60 @@ $("#main .leftmenu ul li").on("click",function(){
 		scrollTop:t
 	},2000)
 })
+
+//加载相应的数据
+$(document).ready(function(){
+	$.ajax({
+		url:"http://localhost:9191/project/json/goods.json",
+		success:function(res){
+			res = JSON.parse(res);
+			console.log(res);
+			var str = "";
+			for(var i =0;i<res.length;i++){
+				str += `<li>
+							<a href="details.html" target="_blank">
+								<img src="${res[i].img}" goodId=${res[i].goodId}>
+							</a>
+							<div class="context">
+								<a href="details.html" target="_blank">${res[i].name}</a>
+								<p><span>￥${res[i].oldPrice}</span><s>|￥${res[i].newPrice}</s></p>
+							</div>
+						</li>`;
+			}
+			$("#goods").html(str);
+			//点击跳转到详情页
+			$("#goods li").children("a").on("click",function(){
+				$.cookie("goodId",$(this).children("img").attr("goodId"));
+			})
+			$("#goods li .context").children("a").on("click",function(){
+//				console.log(1);
+//				console.log($(this).parent().prev().children("img").attr("goodId"));
+				$.cookie("goodId",$(this).parent().prev().children("img").attr("goodId"));
+			})
+		}
+	})
+})
+
+//通过json加载过来数据的滑过放大效果
+$("#goods").on("mouseenter","li a img",function(event){
+	$(this).css({width:210});
+})
+$("#goods").on("mouseleave","li a img",function(event){
+	$(this).css({width:190});
+})
+//滑过放大效果
+$(".enlarge li a img").on("mouseenter",function(){
+	$(this).css({width:210});
+})
+$(".enlarge li a img").on("mouseleave",function(){
+	$(this).css({width:190});
+})
+
+
+
+
+
+
+
+
+

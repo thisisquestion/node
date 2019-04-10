@@ -58,7 +58,7 @@ function register(req,res,urlObj){
 		var obj = querystring.parse(str);
 		var onoff = true;
 		for(var i=0;i<arr.length;i++){
-			if(arr[i].user == obj.user && arr[i].pass == obj.pass){
+			if(arr[i].user == obj.user){
 				onoff = false;
 				res.write('{"msg":"重名","code":0}');
 				break;
@@ -71,5 +71,6 @@ function register(req,res,urlObj){
 		res.end();
 	})
 }
+
 
 
