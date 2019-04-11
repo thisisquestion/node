@@ -85,7 +85,6 @@ $(document).ready(function(){
 		url:"http://localhost:9191/project/json/goods.json",
 		success:function(res){
 			res = JSON.parse(res);
-			console.log(res);
 			var str = "";
 			for(var i =0;i<res.length;i++){
 				str += `<li>

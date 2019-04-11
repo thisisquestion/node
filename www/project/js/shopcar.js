@@ -96,7 +96,7 @@ class Car{
 							that.selectAll.checked = false;
 						}
 						that.totalNum.innerHTML = "总数量为：" + that.totalNumV;
-						that.totalPrice.innerHTML = that.totalPriceV;
+						that.totalPrice.innerHTML = that.totalPriceV.toFixed(2);
 					}
 				})
 				this.selectAll.addEventListener("change",function(){
@@ -118,7 +118,7 @@ class Car{
 						}
 					}
 					that.totalNum.innerHTML = "总数量为：" + that.totalNumV;
-					that.totalPrice.innerHTML = that.totalPriceV;
+					that.totalPrice.innerHTML = that.totalPriceV.toFixed(2);
 				})
 			}
 			changeCookie(callback){
@@ -128,7 +128,7 @@ class Car{
 					}
 				}
 				callback(i);
-				$.cookie("goods",JSON.stringify(this.goods));
+				$.cookie("goodss",JSON.stringify(this.goods));
 			}
 		}
 		new Car({
