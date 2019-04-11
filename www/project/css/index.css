@@ -7,6 +7,8 @@
 #header .header-l span.icon-44{color:#2db4ea;padding:0 0 0 15px;}
 #header .header-l a{color:#666;}
 #header .header-l a:hover{color:#2db4ea;}
+#header .header-l s{color:#666;}
+#header .header-l i{color:red;padding:0 5px;}
 #header .header-r{float:right;}
 #header .header-r ul{float:right;}
 #header .header-r ul li{float:left;}
@@ -25,7 +27,7 @@
 #nav .nav-t .search{float:left;}
 #nav .nav-t .search form{width:460px;height:31px;border:2px solid #2db4ea;position:relative;}
 #nav .nav-t .search form input{float:left;border:0;margin:0;padding:0;}
-#nav .nav-t .search form p{float:left;width:60px;background:#2db4ea;height:31px;text-align: center;}
+#nav .nav-t .search form p{float:left;width:60px;background:#2db4ea;height:29px;text-align: center;padding-top:2px;}
 #nav .nav-t .search form p:hover{cursor:pointer;}
 #nav .nav-t .search form p span.icon-sousuo{color:#fff;font:30px/31px "";}
 #nav .nav-t .search form input[type=text]{width:380px;padding:0 10px;font:16px/31px "微软雅黑";}
@@ -121,8 +123,8 @@
 #main .hotPush .hotPush-b ul{width:960px;}
 #main .hotPush .hotPush-b ul li{width:190px;float:left;border:1px solid #f5f5f5;overflow: hidden;background: #fff;}
 #main .hotPush .hotPush-b ul li a{display:block;padding:10px 5px;width:190px;height:190px;overflow: hidden;}
-#main .hotPush .hotPush-b ul li:nth-child(1){height:291px;}
-#main .hotPush .hotPush-b ul li:nth-child(1) a{width:190px;height:auto}
+/*#main .hotPush .hotPush-b ul li:nth-child(1){height:291px;}
+#main .hotPush .hotPush-b ul li:nth-child(1) a{width:190px;height:auto}*/
 #main .hotPush .hotPush-b ul li a img{width:190px;}
 #main .hotPush .hotPush-b ul li .context{text-align: center;}
 #main .hotPush .hotPush-b ul li .context a{display:block;line-height:18px;height:36px;text-align: center;margin-top:5px;}

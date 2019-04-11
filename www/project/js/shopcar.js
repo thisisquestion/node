@@ -30,9 +30,16 @@ class Car{
 				})
 			}
 			getCookie(){
-				this.goods = $.cookie("goodss");
-				this.goods = JSON.parse(this.goods);
-				this.display();
+				this.user = $.cookie("user");
+				this.userInfo = JSON.parse($.cookie("userInfo"));
+				console.log(this.userInfo);
+				for(var i=0;i<this.userInfo.length;i++){
+					if(this.user == this.userInfo[i].user){
+						this.goods = this.userInfo[i].goods;
+						console.log(this.goods);
+						this.display();
+					}
+				}
 			}
 			display(){
 				var str = "";
@@ -85,7 +92,7 @@ class Car{
 						if(target.checked ==  true){
 //							如果复选框的状态为选中状态则计算相应的数量的总价
 							that.totalNumV +=  parseInt(target.parentNode.parentNode.children[4].children[0].value);
-							console.log(that.totalNumV);
+//							console.log(that.totalNumV);
 							that.totalPriceV += (target.parentNode.parentNode.children[4].children[0].value) * target.parentNode.parentNode.children[3].innerHTML;
 						}
 //						判断改变后,复选框的状态是否未选中的状态
@@ -128,7 +135,7 @@ class Car{
 					}
 				}
 				callback(i);
-				$.cookie("goodss",JSON.stringify(this.goods));
+				$.cookie("userInfo",JSON.stringify(this.userInfo));
 			}
 		}
 		new Car({

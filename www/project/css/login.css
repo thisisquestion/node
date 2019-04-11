@@ -10,5 +10,6 @@
 .error{color:red;}
 #main .box .box1 .cont span{font:30px/38px "";color:#666;}
 #main .box input{float:left;height:38px;width:220px;padding:0 10px;font:16px/38px "";box-sizing: border-box;}
-#main .box #btn{height:38px;width:100%;background:#169cd5;text-align: center;color:#fff;padding:0 10px;margin-top:50px;}
-#main span{color:red;font:16px/20px "微软雅黑";}
+#main .box #btn1{height:38px;width:100%;background:#169cd5;text-align: center;color:#fff;padding:0 10px;margin-top:30px;}
+#main .box #btn2{height:38px;width:100%;background:#169cd5;text-align: center;color:#fff;padding:0 10px;margin-top:20px;}
+#main form i{color:red;font:14px/17px "微软雅黑";height:17px;display:block;}

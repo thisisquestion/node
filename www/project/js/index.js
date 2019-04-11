@@ -1,3 +1,5 @@
+
+
 //header部分，下拉/上拉效果
 $("#header .header-r ul li").eq(0).hover(function(){
 	$("#header .header-r ul li .list").stop().slideDown();
@@ -78,9 +80,30 @@ $("#main .leftmenu ul li").on("click",function(){
 		scrollTop:t
 	},2000)
 })
+//点击注销按钮时,注销用户
+$("#header .header-l").on("click","i",function(){
+	$.cookie("user","null");
+	window.location.reload();
+})
+
+
 
 //加载相应的数据
 $(document).ready(function(){
+//header部分完成登录有欢迎语,实现登录注销功能
+	if($.cookie("user") == null || $.cookie("user") == "null"){
+		str = `<a href="login.html">登录</a>
+				<span class="te">|</span>
+				<a href="register.html">免费注册</a>
+				<a href="#"><span class="iconfont icon-44"></span>下载博库APP</a>`;
+		$("#header .header-l").html(str);
+	}else{
+		var user = $.cookie("user");
+		str = `<s>欢迎用户:${user}</s>
+				<i>注销</i>
+				<a href="#"><span class="iconfont icon-44"></span>下载博库APP</a>`;
+		$("#header .header-l").html(str);
+	}
 	$.ajax({
 		url:"http://localhost:9191/project/json/goods.json",
 		success:function(res){
@@ -121,6 +144,12 @@ $("#goods").on("mouseleave","li a img",function(event){
 //滑过放大效果
 $(".enlarge li a img").on("mouseenter",function(){
 	$(this).css({width:210});
+})
+$(".enlarge li a img").eq(0).on("mouseenter",function(){
+	$(this).css({width:190});
+})
+$(".enlarge li a img").eq(10).on("mouseenter",function(){
+	$(this).css({width:190});
 })
 $(".enlarge li a img").on("mouseleave",function(){
 	$(this).css({width:190});

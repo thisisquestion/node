@@ -9,6 +9,7 @@
     	"name":"一问一世界",
     	"img":"https://wdimg3.bookuu.com/goods/06/53/06/2019022130458467-41440.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/06/53/06/2019022130458467-41440.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":68.00,
     	"oldPrice":38.76
     },{
@@ -21,6 +22,7 @@
     	"press":"河南美术",
     	"img":"https://wdimg3.bookuu.com/goods/10/36/22/1553654182.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/10/36/22/1553654182.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":300.00,
     	"oldPrice":183.00
     },{
@@ -33,6 +35,7 @@
     	"press":"凤凰文艺",
     	"img":"https://wdimg3.bookuu.com/goods/15/30/30/20190110A109065-1.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/15/30/30/20190110A109065-1.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":99.60,
     	"oldPrice":56.77
     },{
@@ -45,6 +48,7 @@
     	"press":"江苏文艺",
     	"img":"https://wdimg3.bookuu.com/goods/20/04/25/3252422.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/20/04/25/3252422.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":39.00,
     	"oldPrice":23.08
     },{
@@ -57,6 +61,7 @@
     	"press":"四川文艺",
     	"img":"https://wdimg3.bookuu.com/goods/11/38/08/20181227A109074-1.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/11/38/08/20181227A109074-1.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":45.00,
     	"oldPrice":31.10
     },{
@@ -69,6 +74,7 @@
     	"press":"江苏文艺",
     	"img":"https://wdimg3.bookuu.com/goods/13/43/45/2019010930331365-67098.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/13/43/45/2019010930331365-67098.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":158.00,
     	"oldPrice":93.28
     },{
@@ -81,6 +87,7 @@
     	"press":"北京联合",
     	"img":"https://wdimg3.bookuu.com/goods/06/25/55/2018102330297422-13763.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/06/25/55/2018102330297422-13763.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":45.00,
     	"oldPrice":30.00
     },{
@@ -93,6 +100,7 @@
     	"press":"北京联合",
     	"img":"https://wdimg3.bookuu.com/goods/13/30/50/20181011A108639-49609.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/13/30/50/20181011A108639-49609.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":68.00,
     	"oldPrice":37.40
     },{
@@ -105,6 +113,7 @@
     	"press":"浙江人民",
     	"img":"https://wdimg3.bookuu.com/goods/13/26/34/20181218A109013-15141.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/13/26/34/20181218A109013-15141.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":52.00,
     	"oldPrice":28.60
     },{
@@ -117,6 +126,7 @@
     	"press":"中信",
     	"img":"https://wdimg3.bookuu.com/goods/16/54/04/20181120A108848-1.jpg@!w210",
     	"largeImg":"https://wdimg3.bookuu.com/goods/16/54/04/20181120A108848-1.jpg",
+    	"localLargeImg":"../images/yihuayishijie.jpg",
     	"newPrice":68.00,
     	"oldPrice":49.00
     }]
